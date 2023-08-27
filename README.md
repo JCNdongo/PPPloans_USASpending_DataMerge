@@ -13,4 +13,4 @@ public_up_to_150k_9_230101.csv,
 public_up_to_150k_10_230101.csv,
 public_up_to_150k_11_230101.csv,
 public_up_to_150k_12_230101.csv.
-## Step 1: Create a single file for all PPP loans up to $150k by merging the 12 original files above, filtering the "ProcessingMethod" column by PPP, and dropping columns that will not be used for the analysis. 
+## Step 1: Create a single file for all PPP loans up to $150k by merging the 12 original files above, filtering the "ProcessingMethod" column by PPP, and dropping columns that will not be used for the analysis: https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/All_PPP_upto150k.ipynb ##
