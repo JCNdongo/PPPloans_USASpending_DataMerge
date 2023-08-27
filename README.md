@@ -21,8 +21,6 @@ public_up_to_150k_12_230101.csv.
 https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/All_PPP_upto150k.ipynb 
 
 ####Data cleanup of All_PPP_upto150k.csv file:
-
-Filtered by "Existing or more than 2 years old" and "Unanswered" to remove startups and businesses < 2yrs old, resulting in 933,266 entries (rows)
-
-Renamed "BorrowerName" as "BusinessName"
-
+1. Filtered by "Existing or more than 2 years old" and "Unanswered" to remove startups and businesses < 2yrs old, resulting in 933,266 entries (rows)
+2. Renamed "BorrowerName" as "BusinessName"
+3. Saved the file as PPP_up_to_150k_Aggregate.csv
