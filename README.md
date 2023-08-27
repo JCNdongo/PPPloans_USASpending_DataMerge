@@ -5,7 +5,7 @@ Merging data from PPP loan recipients in 2020 and 2021 with USASpending.gov Awar
 #### 1a: PPP Data Collection:#### 
 I retrieved PPP files  on January 9, 2023 from the SBA's website: https://www.sba.gov/funding-programs/loans/covid-19-relief-options/paycheck-protection-program/ppp-data 
 
-I created a single file for all PPP loans up to $150k by merging the 12 original files below, filtering the "ProcessingMethod" column by PPP, and dropping columns that will not be used for the analysis: https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/All_PPP_upto150k.ipynb 
+Using Python, I created a single file for all PPP loans up to $150k by merging the 12 original files below, filtering the "ProcessingMethod" column by PPP, and dropping columns that will not be used for the analysis: https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/All_PPP_upto150k.ipynb 
 
 public_up_to_150k_1_230101.csv,
 public_up_to_150k_2_230101.csv,
