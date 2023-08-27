@@ -19,3 +19,10 @@ public_up_to_150k_11_230101.csv,
 public_up_to_150k_12_230101.csv.
 #### Step 1: I created a single file for all PPP loans up to $150k by merging the 12 original files above, filtering the "ProcessingMethod" column by PPP, and dropping columns that will not be used for the analysis:#### 
 https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/All_PPP_upto150k.ipynb 
+
+####Data cleanup of All_PPP_upto150k.csv file:
+
+Filtered by "Existing or more than 2 years old" and "Unanswered" to remove startups and businesses < 2yrs old, resulting in 933,266 entries (rows)
+
+Renamed "BorrowerName" as "BusinessName"
+
