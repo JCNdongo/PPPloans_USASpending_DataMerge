@@ -24,7 +24,7 @@ public_up_to_150k_12_230101.csv.
 #### 1b: PPP Data Transformation and Cleanup:####
 1. I retrieved the "All_PPP_upto150k.csv" single file with all PPP loan data, made a copy "All_PPP_upto150k_copy.csv"
 2. In the copy, I renamed the columns BorrowerName and CurrentApprovalAmount, respectively, "BusinessName" and "PPPInitialApprovalAmount".
-3. Using Python, I did the following: https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/Cleaning_All_PPP_upto150k.ipynb
+3. Using Python, I did the following: [https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/Cleaning_All_PPP_upto150k.ipynb ](https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/Cleaning_All_PPP_upto150k.ipynb)
 
 (a) delete the columns "ProcessingMethod", "CurrentApprovalAmount", and "UndisbursedAmount", (b) remove every "BusinessName" titled "NOT AVAILABLE", and every "BusinessAgeDescription" titled "New Business or 2 years or less" or "Startup, Loan Funds will Open Business", and (c) in columns "HubzoneIndicator" and "LMIIndicator", replace Y with 1 and N with 0 to make the variables numerical and binary to facilitate the analysis (1 for Yes; 0 for No): 
 6. Saved the file as PPP_up_to_150k_Aggregate.csv
