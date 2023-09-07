@@ -5,7 +5,7 @@ Merging data from PPP loan recipients in 2020 and 2021 with USASpending.gov Awar
 #### 1a: PPP Data Collection: #### 
 I retrieved PPP files  on January 9, 2023 from the SBA's website: https://www.sba.gov/funding-programs/loans/covid-19-relief-options/paycheck-protection-program/ppp-data 
 
-Using Python, I created a single file for all PPP loans up to $150k by merging the 12 original files below, filtering the "ProcessingMethod" column by PPP, and dropping columns that will not be used for the analysis: [All_PPP_upto150k.ipynb.](https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/All_PPP_upto150k.ipynb)
+Using Python, I accessed the files' contents, parse the data, and created a single file for all PPP loans up to $150k by merging the 12 original files below, filtering the "ProcessingMethod" column by PPP, and dropping columns that will not be used for the analysis: [All_PPP_upto150k.ipynb.](https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/All_PPP_upto150k.ipynb)
 
 
 public_up_to_150k_1_230101.csv,
@@ -36,6 +36,6 @@ On June 30, 2023, I retrieved USASpending.gov Award Data Archive from 2015 to 20
 
 The data consisted of 2 to 7 .csv files (2GB avg.) for each year (2015 to 2022). 
 
-Using Python, I condensed the files and merged them into one file for the entire time-series period. 
+Using Python, I wrote scripts to access the content of the files, parse the data, condense the files and merge them into one file for the entire time-series period (2015 to 2022). 
 
 #### 2a: USASpending.gov Data Transformation and Cleanup: ####
