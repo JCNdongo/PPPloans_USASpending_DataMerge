@@ -36,6 +36,6 @@ On June 30, 2023, I retrieved USASpending.gov Award Data Archive from 2015 to 20
 
 The data consisted of 2 to 7 .csv files (2GB avg.) for each year (2015 to 2022). 
 
-Using Python, I condensed the files and produced one file for the entire time-series period. 
+Using Python, I condensed the files and merged them into one file for the entire time-series period. 
 
-#### 2a: PPP Data Collection:####
+#### 2a: USASpending.gov Data Transformation and Cleanup:####
