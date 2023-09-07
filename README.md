@@ -2,7 +2,7 @@
 Merging data from PPP loan recipients in 2020 and 2021 with USASpending.gov Award Archive Data from 2015 to 2022. 
 
 ## Step 1: PPP Loan Data Collection and Transformation ##
-#### 1a: PPP Data Collection:#### 
+#### 1a: PPP Data Collection: #### 
 I retrieved PPP files  on January 9, 2023 from the SBA's website: https://www.sba.gov/funding-programs/loans/covid-19-relief-options/paycheck-protection-program/ppp-data 
 
 Using Python, I created a single file for all PPP loans up to $150k by merging the 12 original files below, filtering the "ProcessingMethod" column by PPP, and dropping columns that will not be used for the analysis: [All_PPP_upto150k.ipynb.](https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/All_PPP_upto150k.ipynb)
@@ -21,7 +21,7 @@ public_up_to_150k_10_230101.csv,
 public_up_to_150k_11_230101.csv,
 public_up_to_150k_12_230101.csv.
 
-#### 1b: PPP Data Transformation and Cleanup:####
+#### 1b: PPP Data Transformation and Cleanup: ####
 1. I retrieved the "All_PPP_upto150k.csv" single file with all PPP loan data, made a copy "All_PPP_upto150k_copy.csv"
 2. In the copy, I renamed the columns BorrowerName and CurrentApprovalAmount, respectively, "BusinessName" and "PPPInitialApprovalAmount".
 3. Using Python, I did the following: [Cleaning_All_PPP_upto150k.ipynb](https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/Cleaning_All_PPP_upto150k.ipynb)
@@ -31,11 +31,11 @@ public_up_to_150k_12_230101.csv.
 Result, number of PPP recipients FOR THIS ANALYSIS: 933,405 businesses that were recipients of PPP loans up to $150,000 nationwide based on the criteria above. 
 
 ## Step 2: USASpending.gov Data Collection and Transformation ##
-#### 2a: USASpending.gov Data Collection:#### 
+#### 2a: USASpending.gov Data Collection: #### 
 On June 30, 2023, I retrieved USASpending.gov Award Data Archive from 2015 to 2022  from https://www.usaspending.gov/download_center/award_data_archive
 
 The data consisted of 2 to 7 .csv files (2GB avg.) for each year (2015 to 2022). 
 
 Using Python, I condensed the files and merged them into one file for the entire time-series period. 
 
-#### 2a: USASpending.gov Data Transformation and Cleanup:####
+#### 2a: USASpending.gov Data Transformation and Cleanup: ####
