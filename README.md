@@ -40,5 +40,5 @@ Using Python, I wrote scripts to access the content of each file and parse the d
 
 #### 2a: USASpending.gov Data Transformation and Cleanup: ####
 
-1. USing PostgreSQL, I wrote a SQL script to merge the different files for a given year into one. Result: 1 single file for all 2015 Contracting data, another for 2016, 2017, etc... 
+1. USing PostgreSQL, I wrote a SQL script to merge the different files for a given year into one. For example, for 2015, I ran SQL Code "2015_Contracting_DataMerger.sql", which resulted in "All_2015_Contracting" SQL table with 352,700 entries (unique entries of businesses that were awarded federal government contracts in 2015). I exported the table as a csv file. I repeated the process for 2016-2022. 
 2. Using Python, I wrote a scrip to merge the newly created files into one main file with contracting data for the entire time-series period (2015 to 2022).
