@@ -36,7 +36,9 @@ I retrieved USASpending.gov Award Data Archive (2015 to 2022) on June 30, 2023 f
 
 The data consisted of 2 to 7 .csv files (2GB avg.) for each year (2015 to 2022). 
 
-Using Python, I wrote scripts to access the content of each file and parse the data, retaining the following columns (variables) only for each file and year. Variables for 2015: BusinessUEI,	2015_total_dollars_obligated,	2015_total_outlayed_amount_for_overall_award,	2015_current_total_value_of_award,	2015_base_and_all_options_value,	2015_potential_total_value_of_award,	2015_number_of_offers_received,	BusinessName,	City,	State,	ZipCode,	NAICS,	NAICSDescription,	alaskan_native,	american_indian	indian_tribe,	native_hawaiian	tribally_owned,	veteran_owned,	service_disabled_veteran,	woman_owned	WOSB,	econ_disadv_WOSB,	jointVenture_WOSB,	jointVenture_econ_disadv_WOSB	minority_owned,	subcontinent_asian_indian_american,	asian_pacific_american,	black_american,	hispanic_american	native_american,	other_minority,	usaspending_permalink.
+Using Python, I wrote scripts to access the content of each file and parse the data, retaining the following columns (variables) only for each file and year. 
+
+Variables for 2015: BusinessUEI,	2015_total_dollars_obligated,	2015_total_outlayed_amount_for_overall_award,	2015_current_total_value_of_award,	2015_base_and_all_options_value,	2015_potential_total_value_of_award,	2015_number_of_offers_received,	BusinessName,	City,	State,	ZipCode,	NAICS,	NAICSDescription,	alaskan_native,	american_indian	indian_tribe,	native_hawaiian	tribally_owned,	veteran_owned,	service_disabled_veteran,	woman_owned	WOSB,	econ_disadv_WOSB,	jointVenture_WOSB,	jointVenture_econ_disadv_WOSB	minority_owned,	subcontinent_asian_indian_american,	asian_pacific_american,	black_american,	hispanic_american	native_american,	other_minority,	usaspending_permalink.
 
 
 #### 2a: USASpending.gov Data Transformation and Cleanup: ####
