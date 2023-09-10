@@ -40,6 +40,6 @@ Using Python, I wrote scripts to access the content of each file and parse the d
 
 #### 2a: USASpending.gov Data Transformation and Cleanup: ####
 
-USing PostgreSQL, I wrote a SQL script to merge the different files for a given year into one. Result: 1 single file for all 2015 Contracting data, another for 2016, 2017, etc... 
+1. USing PostgreSQL, I wrote a SQL script to merge the different files for a given year into one. Result: 1 single file for all 2015 Contracting data, another for 2016, 2017, etc... 
 
-Using Python, I wrote a scrip to merge the newly created files into one main file with contracting data for the entire time-series period (2015 to 2022).
+2. Using Python, I wrote a scrip to merge the newly created files into one main file with contracting data for the entire time-series period (2015 to 2022).
