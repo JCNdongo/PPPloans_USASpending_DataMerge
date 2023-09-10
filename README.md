@@ -32,10 +32,14 @@ Result, number of PPP recipients FOR THIS ANALYSIS: 933,405 businesses that were
 
 ## Step 2: USASpending.gov Data Collection and Transformation ##
 #### 2a: USASpending.gov Data Collection: #### 
-On June 30, 2023, I retrieved USASpending.gov Award Data Archive from 2015 to 2022  from https://www.usaspending.gov/download_center/award_data_archive
+I retrieved USASpending.gov Award Data Archive (2015 to 2022) on June 30, 2023 from https://www.usaspending.gov/download_center/award_data_archive
 
 The data consisted of 2 to 7 .csv files (2GB avg.) for each year (2015 to 2022). 
 
-Using Python, I wrote scripts to access the content of the files, parse the data, condense the files and merge them into one file for the entire time-series period (2015 to 2022). 
+Using Python, I wrote scripts to access the content of each file and parse the data, retaining the following columns (variables) only for each file and year: 
 
 #### 2a: USASpending.gov Data Transformation and Cleanup: ####
+
+USing PostgreSQL, I wrote a SQL script to merge the different files for a given year into one. Result: 1 single file for all 2015 Contracting data, another for 2016, 2017, etc... 
+
+Using Python, I wrote a scrip to merge the newly created files into one main file with contracting data for the entire time-series period (2015 to 2022).
