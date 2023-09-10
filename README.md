@@ -36,10 +36,11 @@ I retrieved USASpending.gov Award Data Archive (2015 to 2022) on June 30, 2023 f
 
 The data consisted of 2 to 7 .csv files (2GB avg.) for each year (2015 to 2022). 
 
-Using Python, I wrote scripts to access the content of each file and parse the data, retaining the following columns (variables) only for each file and year: 
+Using Python, I wrote scripts to access the content of each file and parse the data, retaining the following columns (variables) only for each file and year. Variables for 2015: BusinessUEI,	2015_total_dollars_obligated,	2015_total_outlayed_amount_for_overall_award,	2015_current_total_value_of_award,	2015_base_and_all_options_value,	2015_potential_total_value_of_award,	2015_number_of_offers_received,	BusinessName,	City,	State,	ZipCode,	NAICS,	NAICSDescription,	alaskan_native,	american_indian	indian_tribe,	native_hawaiian	tribally_owned,	veteran_owned,	service_disabled_veteran,	woman_owned	WOSB,	econ_disadv_WOSB,	jointVenture_WOSB,	jointVenture_econ_disadv_WOSB	minority_owned,	subcontinent_asian_indian_american,	asian_pacific_american,	black_american,	hispanic_american	native_american,	other_minority,	usaspending_permalink.
+
 
 #### 2a: USASpending.gov Data Transformation and Cleanup: ####
 
-1. USing PostgreSQL, I wrote a SQL script to merge the different files for a given year into one. For example, for 2015, I ran SQL Code [2015_Contracting_DataMerger.sql](https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/2015_Contracting_DataMerger.sql). Result: "All_2015_Contracting" SQL table with 352,700 entries (unique entries of businesses that were awarded federal government contracts in 2015); "All_2016_Contracting" SQL table with 354,761 entries; 
-2. I exported the table as a csv file. I repeated the process for 2016-2022. 
+1. USing PostgreSQL, I wrote a SQL script to merge the different files for each year into one main file for that year. For example, for 2015, I ran SQL Code [2015_Contracting_DataMerger.sql](https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/2015_Contracting_DataMerger.sql). I repeated the process for 2016-2022. Result: "All_2015_Contracting" SQL table with 352,700 entries (unique entries of businesses that were awarded federal government contracts in 2015); "All_2016_Contracting" SQL table with 354,761 entries; "All_2017_Contracting" SQL table with 366,910 entries; 
+2. I exported the tables as csv files.  
 3. Using Python, I wrote a scrip to merge the newly created files into one main file with contracting data for the entire time-series period (2015 to 2022).
