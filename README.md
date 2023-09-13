@@ -1,5 +1,6 @@
 # PPPloans_USASpending_DataMerge
 Objective: Putting together a time-series data set of businesses that were awarded federal government contracts every year from 2015 to 2022 and received loans from the Paycheck Protection Program (PPP) due to COVID-19.
+
 Task: Merging data from PPP loan recipients in 2020 and 2021 from the SBA with USASpending.gov Award Archive Data from 2015 to 2022 from the US Department of Treasury. 
 
 ## Step 1: PPP Loan Data Collection and Transformation ##
