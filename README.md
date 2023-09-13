@@ -54,4 +54,14 @@ Result, number of businesses that were awarded federal government contracts pere
 ## Step 3: Merging PPP and USASpending.gov Data ##
 #### 3a: Merging PPP_up_to_150k_Aggregate.csv and All_2015to2022_Contracting.csv files: #### 
 
-Result, number of PPP recipients that were awarded federal government contracts perenially from 2015 to 2022 FOR THIS ANALYSIS: (to be determined)
+I wrote a Python script to merge the PPP_up_to_150k_Aggregate.csv and All_2015to2022_Contracting.csv files: [Merging_PPP_and_AllContracting2015to2022_V1.ipynb]().  
+
+Result, number of PPP recipients that were awarded federal government contracts perenially from 2015 to 2022 FOR THIS ANALYSIS: 1,622 businesses.
+
+The new merged file was saved as "MERGED_PPP_ALLContractingV1.csv". After further cleaning, the file will be further be used to begin the analysis.
+
+#### 3b: Challenges and limitations: #### 
+
+The only common indicator/data point that the csv files shared was the business names (businessnane column). 
+
+The names in the PPP file was provided by the business owners at the time of the loan application, and the names on the contracting files were entered by federal contracting officers. Consequently, there may have been spelling discrepancies, which explains that only 1,622 business names were captured when merging the files as those names were the only ones sharing the same spelling in both files. Nevertheless, a sample size of 1,622 is sufficient to begin the analysis.
