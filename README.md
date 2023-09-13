@@ -54,7 +54,7 @@ Result, number of businesses that were awarded federal government contracts pere
 ## Step 3: Merging PPP and USASpending.gov Data ##
 #### 3a: Merging PPP_up_to_150k_Aggregate.csv and All_2015to2022_Contracting.csv files: #### 
 
-I wrote a Python script to merge the PPP_up_to_150k_Aggregate.csv and All_2015to2022_Contracting.csv files: [Merging_PPP_and_AllContracting2015to2022_V1.ipynb]().  
+I wrote a Python script to merge the PPP_up_to_150k_Aggregate.csv and All_2015to2022_Contracting.csv files: [Merging_PPP_and_AllContracting2015to2022_V1.ipynb](https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/Merging_PPP_and_AllContracting2015to2022_V1.ipynb).  
 
 Result, number of PPP recipients that were awarded federal government contracts perenially from 2015 to 2022 FOR THIS ANALYSIS: 1,622 businesses.
 
