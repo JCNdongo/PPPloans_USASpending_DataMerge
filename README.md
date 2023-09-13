@@ -45,4 +45,8 @@ Variables for 2015: BusinessUEI,	2015_total_dollars_obligated,	2015_total_outlay
 
 1. USing PostgreSQL, I wrote a SQL script to merge the different files for each year into one main file for that year. For example, for 2015, I ran SQL Code [2015_Contracting_DataMerger.sql](https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/2015_Contracting_DataMerger.sql). I repeated the process for 2016-2022. Result: "All_2015_Contracting" SQL table with 352,700 entries (unique entries of businesses that were awarded federal government contracts in 2015); "All_2016_Contracting" SQL table with 354,761 entries; "All_2017_Contracting" SQL table with 366,910 entries; "All_2018_Contracting" SQL table with 369,037 entries; "All_2019_Contracting" SQL table with 362,658 entries; "All_2020_Contracting" SQL table with 361,321 entries; "All_2021_Contracting" SQL table with 343,544 entries; "All_2022_Contracting" SQL table with 346,074 entries. 
 2. I exported the tables as csv files.  
-3. I wrote a Python script to merge the newly created files into one main file with contracting data for the entire time-series period (2015 to 2022), keeping only businesses that were awarded federal contracts every year from 2015 to 2022: [Merging_2015to2022_Contracting_Data.ipynb]
+3. I wrote a Python script to merge the newly created files into one main file with contracting data for the entire time-series period (2015 to 2022), keeping only businesses that were awarded federal contracts every year from 2015 to 2022: [Merging_2015to2022_Contracting_Data.ipynb](https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/Merging_2015to2022_Contracting_Data.ipynb), resulting in All_2015to2022_Contracting.csv file
+
+
+## Step 3: Merging PPP and USASpending.gov Data ##
+#### 3a: Merging PPP_up_to_150k_Aggregate.csv and All_2015to2022_Contracting.csv files: #### 
