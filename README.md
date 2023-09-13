@@ -28,7 +28,7 @@ public_up_to_150k_12_230101.csv.
 
 (a) delete the columns "ProcessingMethod", "CurrentApprovalAmount", and "UndisbursedAmount", (b) remove every "BusinessName" titled "NOT AVAILABLE", and every "BusinessAgeDescription" titled "New Business or 2 years or less" or "Startup, Loan Funds will Open Business", (c) in columns "HubzoneIndicator" and "LMIIndicator", replace Y with 1 and N with 0 to make the variables numerical and binary to facilitate the analysis (1 for Yes; 0 for No), and (d) save the file as PPP_up_to_150k_Aggregate.csv
 
-Result, number of PPP recipients FOR THIS ANALYSIS: 933,405 businesses that were recipients of PPP loans up to $150,000 nationwide based on the criteria above. 
+Result, number of PPP recipients FOR THIS ANALYSIS: 933,404 businesses that were recipients of PPP loans up to $150,000 nationwide based on the criteria above. 
 
 ## Step 2: USASpending.gov Data Collection and Transformation ##
 #### 2a: USASpending.gov Data Collection: #### 
@@ -47,6 +47,9 @@ Variables for 2015: BusinessUEI,	2015_total_dollars_obligated,	2015_total_outlay
 2. I exported the tables as csv files.  
 3. I wrote a Python script to merge the newly created files into one main file with contracting data for the entire time-series period (2015 to 2022), keeping only businesses that were awarded federal contracts every year from 2015 to 2022: [Merging_2015to2022_Contracting_Data.ipynb](https://github.com/JCNdongo/PPPloans_USASpending_DataMerge/blob/main/Merging_2015to2022_Contracting_Data.ipynb), resulting in All_2015to2022_Contracting.csv file with 303,459 businesses that were awarded federal government contracts perenially from 2015 to 2022.
 
+Result, number of businesses that were awarded federal government contracts perenially from 2015 to 2022 FOR THIS ANALYSIS: 303,459.
 
 ## Step 3: Merging PPP and USASpending.gov Data ##
 #### 3a: Merging PPP_up_to_150k_Aggregate.csv and All_2015to2022_Contracting.csv files: #### 
+
+Result, number of PPP recipients that were awarded federal government contracts perenially from 2015 to 2022 FOR THIS ANALYSIS: (to be determined)
